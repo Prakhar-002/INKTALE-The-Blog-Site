@@ -860,8 +860,8 @@ span.material-symbols-rounded {
   position: absolute;
   top: calc(100% + 4px);
   right: 0;
-  min-width: 180px;
-  max-width: 280px;
+  width: 200px;
+  max-width: 300px;
   background-color: var(--surface-container);
   padding-block: var(--space-2);
   border-radius: var(--radius-extra-small);
@@ -1727,6 +1727,11 @@ body:has( .dialog-root.active) { overflow: hidden; }
   .home-page .card:not(:first-child) .card-banner {
     /* display: block; */
   }
+
+  /* * MENU BUTTON */
+  .menu {
+    width: 230px;
+  }
 }
 
 
@@ -1863,6 +1868,12 @@ body:has( .dialog-root.active) { overflow: hidden; }
 
   .settings-card { padding: var(--space-6); }
 
+  
+  /* * MENU BUTTON */
+  .menu {
+    width: 250px;
+  }
+
 }
 
 
@@ -1895,6 +1906,12 @@ body:has( .dialog-root.active) { overflow: hidden; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-5);
+  }
+
+  
+  /* * MENU BUTTON */
+  .menu {
+    width: 300px;
   }
 
 }
