@@ -1,0 +1,112 @@
+<!-- 
+      ! https://github.com/Prakhar-002
+      ? © prakhar.katiyar.002@gmail.com
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <!-- this will change the name (title) of upper window -->
+      <%- include('../layouts/head.ejs', { title: 'New blog | Inktale' }) %>
+
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+      <script src="/js/script.js" defer></script>
+
+      <script src="/js/create_blog.js" type="module"></script>
+
+</head>
+<body>
+
+
+      <!-- Top bar -->
+      <%- include('../partials/top_app_bar.ejs') %>
+
+
+
+      <main class="main">
+            <article class="page create-blog-page">
+                  <div class="container">
+
+                        <h2 class="page-title text-on-surface headline-small">
+                              Create Blog
+                        </h2>
+
+                        <form action="" class="blog-write-form" data-form>
+
+                              <div class="image-field-wrapper">
+
+                                    <label for="banner" class="btn filled-tonal">
+                                          <input type="file" name="banner" accept="image/*" id="banner" data-image-field>
+
+                                          <span class="material-symbols-rounded leading-icon" aria-hidden="true">
+                                                cloud_upload
+                                          </span>
+
+                                          <p class="label-large">Upload Image</p>
+
+                                          <div class="state-layer"></div>
+                                    </label>
+
+                                    <p class="text label-large text-on-surface-variant">
+                                          Use a ratio of 21:9 for best results. <br>
+                                          Only JPEG and PNG with max size of 5MB.
+                                    </p>
+
+                                    <div class="image-preview img-cover" data-image-preview></div>
+
+                                    <button type="button" class="icon-btn filled-tonal" data-image-preview-clear>
+                                          <span class="material-symbols-rounded" aria-hidden="true">
+                                                delete
+                                          </span>
+
+                                          <div class="state-layer"></div>
+                                    </button>   
+
+                              </div>
+
+                              <input type="text" 
+                              name="title" 
+                              aria-label="Blog title" 
+                              placeholder="Article Title ..." 
+                              required 
+                              class="title-field headline-large">
+
+                              <div class="divider"></div>
+
+                              <textarea name="content" 
+                              aria-label="Blog content" 
+                              placeholder="Write your post content here ..."
+                              class="textarea body-large"
+                              required
+                              data-textarea-auto-height></textarea>
+
+                              <div class="footer-actions">
+
+                                    <button class="btn btn-fill" data-publish-btn>
+                                          <p class="label-large">Publish</p>
+
+                                          <div class="state-layer"></div>
+                                    </button>
+
+                              </div>
+
+                        </form>
+
+                  </div>
+            </article>
+      </main>
+
+
+
+      <!-- Footer -->
+      <%- include('../layouts/footer.ejs') %>
+
+
+      <!-- SnackBar -->
+      <div class="snackbar-wrapper" data-snackbar-wrapper></div>
+
+</body>
+</html>

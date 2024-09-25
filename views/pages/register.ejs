@@ -1,0 +1,107 @@
+<!-- 
+      ! https://github.com/Prakhar-002
+      ? © prakhar.katiyar.002@gmail.com
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <!-- this will change the name (title) of upper window -->
+      <%- include('../layouts/head.ejs', { title: 'Register | Inktale' }) %>
+
+      <script type="module" src="/js/register.js"></script>
+
+</head>
+<body>
+
+
+      <section class="section form-section">
+            <div class="container">
+
+                  <div class="form-card">
+
+                        <div class="card-header">
+                              <a href="/" class="logo">
+
+                                    <img src="/images/logo-light.svg" width="163" height="40" alt="Inktale" class="light">
+                                    <img src="/images/logo-dark.svg" width="163" height="40" alt="Inktale" class="dark">
+
+                              </a>
+
+                              <p class="body-large text-on-surface-variant">
+                                    Join the inktale community
+                              </p>
+                        </div>
+
+                        <form action="" class="form" data-form>
+
+                              <div class="text-field-wrapper">
+                                    <label for="name" class="body-large label">Full Name</label>
+
+                                    <input type="text" 
+                                    name="name" id="name" 
+                                    autocomplete="name" autofocus 
+                                    class="body-large text-field" placeholder=" "
+                                    required>
+                              </div>
+
+                              <div class="text-field-wrapper">
+                                    <label for="email" class="body-large label">Email</label>
+
+                                    <input type="email" 
+                                    name="email" id="email" 
+                                    autocomplete="email" 
+                                    class="body-large text-field" placeholder=" "
+                                    required>
+                              </div>
+
+                              <div class="text-field-wrapper">
+                                    <label for="password" class="body-large label">Password</label>
+
+                                    <input type="password" 
+                                    name="password" id="password" 
+                                    class="body-large text-field" minlength="8"
+                                    placeholder=" "
+                                    required>
+                              </div>
+
+                              <div class="text-field-wrapper">
+                                    <label for="confirm-password" class="body-large label">Confirm Password</label>
+
+                                    <input type="password" 
+                                    name="confirm_password" id="confirm-password" 
+                                    class="body-large text-field"
+                                    placeholder=" "
+                                    required>
+                              </div>
+
+                              <button type="submit" class="btn btn-fill" data-submit-btn>
+                                    <p class="label-large">Sign up</p>
+
+                                    <div class="state-layer"></div>
+                              </button>
+
+                        </form>
+
+                        <div class="card-footer">
+                              <p class="label-large">
+                                    Already have an account?
+                              </p>
+
+                              <a href="/login" class="label-large text-primary">Sign in</a>
+                        </div>
+
+                  </div>
+
+            </div>
+      </section>
+
+
+      <!-- SNACKBAR -->
+      <div class="snackbar-wrapper" data-snackbar-wrapper></div>
+
+
+</body>
+</html>

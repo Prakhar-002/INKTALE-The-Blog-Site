@@ -1,0 +1,93 @@
+<!-- 
+      ! https://github.com/Prakhar-002
+      ? © prakhar.katiyar.002@gmail.com
+-->
+
+
+<% 
+      const {
+            _id: blogId,
+            title,
+            reaction,
+            totalVisit,
+            createdAt,
+            updatedAt
+      } = locals.blog;
+%>
+
+<div class="list-item large">
+
+      <div>
+            <p class="body-large text-on-surface">
+                  <%= title %>
+            </p>
+
+            <p class="list-item-text body-medium text-on-surface-variant">
+                  <b>Published: </b> <%= new Date(createdAt).toLocaleDateString('en-US', {
+                        day: 'numeric',
+                        month: 'short',
+                        year: '2-digit'
+                  }) %>
+
+                  <% if (String(createdAt) !== String(updatedAt)) { %>
+                        &nbsp;
+
+                        <b>Edited: </b> <%= new Date(updatedAt).toLocaleDateString('en-US', {
+                              day: 'numeric',
+                              month: 'short',
+                              year: '2-digit'
+                        }) %>
+                  <% } %>
+            </p>
+      </div>
+
+      <div class="wrapper">
+            <div class="meta-list">
+
+                  <div class="meta-item text-on-surface-variant">
+                        <span class="icon-small material-symbols-rounded">
+                              favorite
+                        </span>
+
+                        <p class="body-medium">
+                              <%= reaction.toLocaleString('en-US') %>
+                        </p>
+                  </div>
+
+                  <div class="meta-item text-on-surface-variant">
+                        <span class="icon-small material-symbols-rounded">
+                              visibility
+                        </span>
+
+                        <p class="body-medium">
+                              <%= totalVisit.toLocaleString('en-US') %>
+                        </p>
+                  </div>
+
+            </div>
+
+            <div class="list-item-actions">
+
+                  <a href="/blogs/<%= blogId %>/edit" class="btn btn-text">
+                        <p class="label-large"> Edit </p>
+
+                        <div class="state-layer"></div>
+                  </a>
+
+                  <button class="btn btn-text error" data-blog-delete-btn="<%= blogId %>">
+                        <p class="label-large"> Delete </p>
+
+                        <div class="state-layer"></div>
+                  </button>
+
+            </div>
+      </div>
+
+      <div class="state-layer"></div>
+
+      <a href="/blogs/<%= blogId %>" 
+            title="<%= title %>" 
+            class="list-item-link">
+      </a>
+
+</div>

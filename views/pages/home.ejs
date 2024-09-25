@@ -1,0 +1,67 @@
+<!-- 
+      ! https://github.com/Prakhar-002
+      ? © prakhar.katiyar.002@gmail.com
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <!-- this will change the name (title) of upper window -->
+      <%- include('../layouts/head.ejs', { title: 'Home | Inktale' }) %>
+
+      <script src="/js/script.js" defer></script>
+
+</head>
+<body>
+
+
+      <!-- Top bar -->
+      <%- include('../partials/top_app_bar.ejs') %>
+
+
+
+      <main class="main">
+
+            <!-- #HOME -->
+            <article class="page home-page">
+
+                  <div class="container">
+
+                        <h2 class="headline-small page-title text-on-surface">
+                              Latest Blogs
+                        </h2>
+
+                        <div class="blog-list">
+
+                              <% if (locals.latestBlogs.length) { %>
+
+                                    <% locals.latestBlogs.forEach(blog => { %>
+
+                                          <%- include('../partials/card.ejs', { blog }) %>
+
+                                    <% }) %>    
+
+                              <% } %>
+
+                        </div>
+
+                        <% if (locals.pagination.next || locals.pagination.prev) { %>
+                              <%- include('../partials/pagination.ejs', { pagination }) %>
+                        <% } %>
+
+                  </div>
+
+            </article>
+
+      </main>
+
+
+
+      <!-- Footer -->
+      <%- include('../layouts/footer.ejs') %>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- 
+      ! https://github.com/Prakhar-002
+      ? © prakhar.katiyar.002@gmail.com
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <!-- this will change the name (title) of upper window -->
+      <%- include('../layouts/head.ejs', { title: `404 | Inktale` }) %>
+
+      <script src="/js/script.js" defer></script>
+
+</head>
+<body>
+
+
+      <main class="main">
+
+            <!-- #404 Page -->
+            <article class="page not-found-page">
+                  <div class="container">
+
+                        <h2 class="display-large text-on-surface">
+                              404
+
+                              <span class="headline-large">
+                                    Page not found!
+                              </span>
+                        </h2>
+
+                        <p class="body-large text-on-surface-variant text-404">
+                              This page doesn't not exist or was removed!
+                              We suggest to go back home.
+                        </p>
+
+                        <a href="/" class="btn btn-fill">
+                              <p class="label-large">Take me home</p>
+
+                              <div class="state-layer"></div>
+                        </a>
+
+                  </div>
+            </article>
+
+      </main>
+
+
+
+      <!-- Footer -->
+      <%- include('../layouts/footer.ejs') %>
+
+
+</body>
+</html>

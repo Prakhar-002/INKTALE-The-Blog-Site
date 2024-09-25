@@ -1,0 +1,156 @@
+<!-- 
+      ! https://github.com/Prakhar-002
+      ? © prakhar.katiyar.002@gmail.com
+-->
+
+
+<% 
+
+      const {
+            blogs,
+            blogPublished,
+            totalReactions,
+            totalVisits
+      } = locals.loggedUser
+
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <!-- this will change the name (title) of upper window -->
+      <%- include('../layouts/head.ejs', { title: 'Dashboard | Inktale' }) %>
+
+      <script src="/js/script.js" defer></script>
+      <script type="module" src="/js/delete_blog.js"></script>
+
+</head>
+<body>
+
+
+      <!-- Top bar -->
+      <%- include('../partials/top_app_bar.ejs') %>
+
+
+
+      <main class="main">
+
+            <!-- #DASHBOARD -->
+            <article class="page dashboard-page">
+                  <div class="container">
+
+                        <h2 class="headline-small page-title text-on-surface">
+                              Dashboard
+                        </h2>
+
+                        <!-- Analytics section -->
+                        <section class="analytics-list">
+
+                              <div class="analytics-card">
+
+                                    <div class="analytics-icon-box">
+                                          <span class="material-symbols-rounded" aria-hidden="true">
+                                                visibility
+                                          </span>
+                                    </div>
+
+                                    <div>
+                                          <h3 class="display-medium text-on-surface card-title">
+                                                <%= totalVisits.toLocaleString('en-US') %>
+                                          </h3>
+
+                                          <p class="title-medium text-on-surface-variant">
+                                                Total Visits
+                                          </p>
+                                    </div>
+
+                              </div>
+
+                              <div class="analytics-card">
+
+                                    <div class="analytics-icon-box">
+                                          <span class="material-symbols-rounded" aria-hidden="true">
+                                                favorite
+                                          </span>
+                                    </div>
+
+                                    <div>
+                                          <h3 class="display-medium text-on-surface card-title">
+                                                <%= totalReactions.toLocaleString('en-US') %>
+                                          </h3>
+
+                                          <p class="title-medium text-on-surface-variant">
+                                                Total Reactions
+                                          </p>
+                                    </div>
+
+                              </div>
+
+                              <div class="analytics-card">
+
+                                    <div class="analytics-icon-box">
+                                          <span class="material-symbols-rounded" aria-hidden="true">
+                                                article
+                                          </span>
+                                    </div>
+
+                                    <div>
+                                          <h3 class="display-medium text-on-surface card-title">
+                                                <%= blogPublished.toLocaleString('en-US') %>
+                                          </h3>
+
+                                          <p class="title-medium text-on-surface-variant">
+                                                Article Published
+                                          </p>
+                                    </div>
+
+                              </div>
+
+                        </section>
+
+                        <!-- Published blogs -->
+                        <section>
+
+                              <h2 class="title-large title text-on-surface">
+                                    Posts
+                              </h2>
+
+                              <div class="post-lists">
+
+                                    <% if (blogs.length) { %>
+
+                                          <% blogs.forEach(blog => { %>
+                                                <%- include('../partials/list-item.ejs', {
+                                                      blog
+                                                }) %>
+                                          <% }) %>
+
+                                    <% } else { %>
+                                          <div class="list-item">
+                                                <p class="body-large text-on-surface-variant">
+                                                      You haven't written anything yet.
+                                                </p>
+                                          </div>
+                                    <% } %>
+
+                              </div>
+
+                        </section>
+
+                  </div>
+            </article>
+
+      </main>
+
+
+
+      <!-- Footer -->
+      <%- include('../layouts/footer.ejs') %>
+
+
+      <!-- SnackBar -->
+      <div class="snackbar-wrapper" data-snackbar-wrapper></div>
+
+</body>
+</html>

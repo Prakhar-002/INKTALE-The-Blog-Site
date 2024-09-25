@@ -1,0 +1,44 @@
+<!-- 
+      ! https://github.com/Prakhar-002
+      ? © prakhar.katiyar.002@gmail.com
+-->
+
+
+<% 
+
+      const {
+            next,
+            prev,
+            totalPage,
+            currentPage
+      } = locals.pagination;
+
+%>
+
+<div class="pagination">
+
+      <a href="<%=prev%>" class="btn filled-tonal" <%=!prev ? 'disabled' : ''%> >
+            <span class="material-symbols-rounded leading-icon" aria-hidden="true">
+                  chevron_left
+            </span>
+
+            <p class="label-large text">Previous</p>
+
+            <div class="layer-state"></div>
+      </a>
+
+      <p class="label-large text-on-surface">
+            <%= currentPage %> / <%= totalPage %>
+      </p>
+
+      <a href="<%=next%>" class="btn filled-tonal" <%=!next ? 'disabled' : ''%> >
+
+            <p class="label-large text">Next</p>
+
+            <span class="material-symbols-rounded trailing-icon" aria-hidden="true">
+                  chevron_right
+            </span>
+
+            <div class="layer-state"></div>
+      </a>
+</div>

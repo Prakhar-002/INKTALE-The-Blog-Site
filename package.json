@@ -1,0 +1,26 @@
+{
+  "name": "inktale",
+  "version": "1.0.0",
+  "description": "Mongo Ejs Express Node project(Blog page)",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "Prakhar Katiyar (Prakhar-002)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.3.0",
+    "compression": "^1.7.4",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "highlight.js": "^11.10.0",
+    "markdown-it": "^14.1.0",
+    "mongoose": "^8.5.1",
+    "nodemon": "^3.1.4"
+  }
+}

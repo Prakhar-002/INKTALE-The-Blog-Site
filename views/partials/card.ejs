@@ -1,0 +1,113 @@
+<!-- 
+      ! https://github.com/Prakhar-002
+      ? © prakhar.katiyar.002@gmail.com
+-->
+
+
+<% 
+
+      const {
+            _id: blogId,
+            banner: {
+                  url: bannerURL
+            } = {},
+            title,
+            owner: {
+                  name,
+                  username,
+                  profilePhoto: {
+                        url: profilePhotoURL
+                  } = {}
+            },
+            createdAt,
+            readingTime,
+            reaction,
+            totalBookmarks
+      } = locals.blog;
+
+      // compress url using cloudinary Transformation URL API
+      // upload/ -->  upload/w_360,h_155,c_auto/q_auto/f_auto/
+      // w_360 = width is 360 pixels
+      // h_155 = height is 155 pixels
+      // c_auto = auto chooses best cropping mode to fit within the specific dimensions
+      // q_auto = auto adjust quality
+      // f_auto = auto formate choose 
+
+      const compressedBannerURl = bannerURL?.replace('upload/','upload/w_360,h_155,c_auto/q_auto/f_auto/');
+
+      const compressedProfilePhotoURL = profilePhotoURL?.replace('upload/','upload/w_40,h_40,c_auto/q_auto/f_auto/');
+
+%>
+
+<div class="card">
+
+      <% if (compressedBannerURl) { %>
+            <figure class="card-banner img-holder">
+                  <img src="<%= compressedBannerURl %>" width="360" height="155" alt="<%= title %>" class="img-cover">
+            </figure>
+      <% } %>
+
+      <div class="card-content">
+            <div class="card-meta">
+
+                  <div class="avatar">
+                        <% if (compressedProfilePhotoURL) { %>
+
+                              <img src="<%= compressedProfilePhotoURL %>" width="40" height="40" alt="<%= name %>" class="img-cover">
+
+                        <% } else { %>
+
+                              <p class="title-medium">
+                                    <%= name.at() %>
+                              </p>
+
+                        <% } %>
+                  </div>
+
+                  <div>
+                        <p class="label-large text-on-surface">
+                              <%= name %>
+                        </p>
+
+                        <p class="body-small text-on-surface-variant">
+                              <%= new Date(createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' }) %>
+                        </p>
+                  </div>
+
+                  <p class="label-small text-on-surface-variant trailing-text">
+                        <%= readingTime %> min read
+                  </p>
+
+            </div>
+
+            <h3 class="card-title title-medium text-on-surface">
+                  <%= title %>
+            </h3>
+      </div>
+
+      <div class="card-footer">
+            <div class="wrapper">
+                  <span class="icon-small material-symbols-rounded text-on-surface-variant">
+                        favorite
+                  </span>
+
+                  <p class="body-medium text-on-surface-variant">
+                        <%= reaction %> Reactions
+                  </p>
+            </div>
+
+            <div class="wrapper">
+                  <span class="icon-small material-symbols-rounded text-on-surface-variant">
+                        bookmark
+                  </span>
+
+                  <p class="body-medium text-on-surface-variant">
+                        <%= totalBookmarks %> Bookmarks
+                  </p>
+            </div>
+      </div>
+
+      <a href="/blogs/<%= blogId %>" title="<%= title %>" class="card-link"></a>
+      <div class="state-layer"></div>
+
+</div>
