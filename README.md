@@ -27,17 +27,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-## Table of Contents 🍲🍯
-
-- [Features 🧸🍂](#features)
-- [Technologies Used 🤖👩🏻‍💻](#technologies-used)
-- [Installation ✈️](#installation)
-- [Usage 🍵🍰](#usage)
-- [Folder Structure 🗂️📒](#folder-structure)
-
-<br/>
-
-## Features 🧸🍂
+## Features🍂🧸
 
 - `Responsive Design` ➺ Optimized for **mobile-first design**.
 - `User Authentication` ➺ Secure **login** and **signup** using `bcrypt`.
@@ -48,7 +38,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-## Technologies Used 🤖👩🏻‍💻
+## Technologies Used 👩🏻‍💻🤖
 
 - `bcrypt` ➺ Library for **hashing passwords** to enhance security.
 - `cloudinary` ➺ **Cloud-based image** and video management service for uploading media.
@@ -69,14 +59,14 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 1. Clone 🗃️ the repository 
 
-      `For window 🍃`
+      `For window 🍦`
 
     ```bash
       git clone https ➺//github.com/Prakhar-002/INKTALE-The-Blog-Site.git
       cd INKTALE-The-Blog-Site
     ```
 
-    `For Linux and macOS 🌿`
+    `For Linux and macOS 🧋`
 
     ```bash
       git clone https ➺//github.com/Prakhar-002/INKTALE-The-Blog-Site.git
@@ -119,7 +109,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-## Folder Structure 🗂️📒
+## Folder Structure 📒🗂️
 
       INKTALE-The-Blog-Site/
       │
