@@ -29,29 +29,29 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 ## Features🍂🧸
 
-- `Responsive Design` ➺ Optimized for **mobile-first design**.
-- `User Authentication` ➺ Secure **login** and **signup** using `bcrypt`.
-- `Blog Management` ➺ **Create**, **edit**, **delete**, and **view** blogs.
-- `User Profile` ➺ Manage user **information** and blogs.
-- `Image Upload` ➺ Upload images using `Cloudinary`.
-- `Error Handling` ➺ Comprehensive `error handling` with **flash** messages.
+- `Responsive Design` 🍁 Optimized for **mobile-first design**.
+- `User Authentication` 🍁 Secure **login** and **signup** using `bcrypt`.
+- `Blog Management` 🍁 **Create**, **edit**, **delete**, and **view** blogs.
+- `User Profile` 🍁 Manage user **information** and blogs.
+- `Image Upload` 🍁 Upload images using `Cloudinary`.
+- `Error Handling` 🍁 Comprehensive `error handling` with **flash** messages.
 
 <br/>
 
 ## Technologies Used 👩🏻‍💻🤖
 
-- `bcrypt` ➺ Library for **hashing passwords** to enhance security.
-- `cloudinary` ➺ **Cloud-based image** and video management service for uploading media.
-- `compression` ➺ Middleware to **compress HTTP responses**, improving performance.
-- `connect-mongo` ➺ **MongoDB session store** for Express and Connect, used for storing session data.
-- `dotenv` ➺  Loads **environment variables** from a `.env` file into `process.env`.
-- `ejs` ➺  Embedded **JavaScript templating engine** for rendering dynamic HTML content.
-- `express` ➺  Fast and minimalist **web framework** for building Node.js applications.
-- `express-session` ➺ Middleware for **managing sessions** in Express apps.
-- `highlight.js` ➺ Library for **syntax highlighting** in code blocks for better readability.
-- `markdown-it` ➺ **Markdown parser** that converts markdown text into HTML.
-- `mongoose` ➺ MongoDB **object modeling tool** designed to work in an asynchronous environment.
-- `nodemon` ➺ Tool that **automatically restarts the server** when file changes are detected.
+- `bcrypt` 🌸 Library for **hashing passwords** to enhance security.
+- `cloudinary` 🌸 **Cloud-based image** and video management service for uploading media.
+- `compression` 🌸 Middleware to **compress HTTP responses**, improving performance.
+- `connect-mongo` 🌸 **MongoDB session store** for Express and Connect, used for storing session data.
+- `dotenv` 🌸  Loads **environment variables** from a `.env` file into `process.env`.
+- `ejs` 🌸  Embedded **JavaScript templating engine** for rendering dynamic HTML content.
+- `express` 🌸  Fast and minimalist **web framework** for building Node.js applications.
+- `express-session` 🌸 Middleware for **managing sessions** in Express apps.
+- `highlight.js` 🌸 Library for **syntax highlighting** in code blocks for better readability.
+- `markdown-it` 🌸 **Markdown parser** that converts markdown text into HTML.
+- `mongoose` 🌸 MongoDB **object modeling tool** designed to work in an asynchronous environment.
+- `nodemon` 🌸 Tool that **automatically restarts the server** when file changes are detected.
 
 <br/>
 
