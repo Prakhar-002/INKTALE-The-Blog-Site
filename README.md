@@ -79,7 +79,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
     ```
 
 3. Create a `.env` file in the root directory and `add the following` ➺
-    ```bash
+    ```Javascript
       MONGO_CONNECTION_URL=your_mongo_connection_URL
       SESSION_SECRET=your_session_secret
       SESSION_MAX_AGE=your_allowed_time
