@@ -99,13 +99,13 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 ## Usage 🍵🍰
 
-- `Home Page` ➺ View **all blogs**.
-- `Authentication` ➺ **Sign up** and **log in** to create and manage blogs.
-- `User Profile` ➺ **Access and edit** your **personal** information.
-- `Create a Blog` ➺ Write and publish new blog posts.
-- `Edit/Delete a Blog` ➺ Manage your published blogs throw `Dashboard`.
-- `Reading List` ➺ **Add blogs** from other users to your **personal reading list** for future reference.
-- `React to Blogs` ➺ **Like** and **engage** with other users' blogs to show **appreciation**.
+- `Home Page` 🌼 View **all blogs**.
+- `Authentication` 🌼 **Sign up** and **log in** to create and manage blogs.
+- `User Profile` 🌼 **Access and edit** your **personal** information.
+- `Create a Blog` 🌼 Write and publish new blog posts.
+- `Edit/Delete a Blog` 🌼 Manage your published blogs throw `Dashboard`.
+- `Reading List` 🌼 **Add blogs** from other users to your **personal reading list** for future reference.
+- `React to Blogs` 🌼 **Like** and **engage** with other users' blogs to show **appreciation**.
 
 <br/>
 
