@@ -23,7 +23,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-## Features🍂🧸
+# Features🍂🧸
 
 - `Responsive Design` 🍁 Optimized for **mobile-first design**.
 - `User Authentication` 🍁 Secure **login** and **signup** using `bcrypt`.
@@ -34,7 +34,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-## Technologies Used 👩🏻‍💻🤖
+# Technologies Used 👩🏻‍💻🤖
 
 - `bcrypt` 🌸 Library for **hashing passwords** to enhance security.
 - `cloudinary` 🌸 **Cloud-based image** and video management service for uploading media.
@@ -51,7 +51,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-## Installation ✈️
+# Installation 🌐
 
 1. Clone 🗃️ the repository 
 
@@ -93,7 +93,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-## Usage 🍵🍰
+# Usage 🍵🍰
 
 - `Home Page` 🌼 View **all blogs**.
 - `Authentication` 🌼 **Sign up** and **log in** to create and manage blogs.
@@ -105,7 +105,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-## Folder Structure 📒🗂️
+# Folder Structure 📒🗂️
 
       INKTALE-The-Blog-Site/
       │
@@ -148,6 +148,6 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-## 🚀 About Me
+# 🚀 About Me
 
 Meet `Prakhar Katiyar` 🙋🏻‍♂️ , An avid learner with a passion for mastering the `MERN (MongoDB, Express.js, React.js, Node.js)` stack 🎯  and diving deep into `Data Structures and Algorithms (DSA)` 🧑🏻‍💻
