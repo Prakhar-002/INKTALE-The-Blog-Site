@@ -4,12 +4,12 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 <br/>
 
-<h2 align="center"> 
+<h1 align="center"> 
 
-<a href="https://inktale.onrender.com/"><strong> ➥ Bring Ideas to Life 🕊️
+<a href="https://inktale.onrender.com/"><strong> ➥ Bring Ideas To Life 🕊️
 </strong></a>
 
-</h2>
+</h1>
 
 # Screenshots 🥡🍥
 
