@@ -13,7 +13,7 @@ Inktale is a fully responsive blog application built with `Express`, `Node`, `Mo
 
 # Screenshots 🥡🍥
 
-![image](https://github.com/user-attachments/assets/b91ff4d3-bd28-4a0d-bbd9-383eff56f807)
+<img src="https://github.com/user-attachments/assets/28f61f8d-8b78-419e-87dd-230a2f308c1f" />
 
 <br/>
 
